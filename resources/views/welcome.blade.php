@@ -18,7 +18,18 @@
 <body>
 
   
-
+<h1>ciao</h1>
+@foreach ($trains as $item)
+<div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{$item['Azienda']}}</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Stazione_di_partenza:{{$item['Stazione_di_partenza']}}</h6>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Stazione_di_arrivo:{{$item['Stazione_di_arrivo']}}</h6>
+      <h6 class="card-subtitle mb-2 text-body-secondary">Orario_di_partenza:{{$item['Orario_di_partenza']}}</h6>
+      
+    </div>
+  </div>
+@endforeach
 </body>
 
 </html>
